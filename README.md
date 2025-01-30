@@ -7,7 +7,6 @@
 从小到大包括TRACE,DEBUG,INFO,WARN,ERROR,FATAL
 
 1.initlevel仅应该被全局初始化一次
-2.设置level后，等级大于level的信息无法被输出，例如initlevel(ERROR)后，LOG(FATAL)失效
 
 # 后端
 当使用LOG(level)时，实际上是创建一个短暂的synclog类，并调用其stream接受后续的流式输入
