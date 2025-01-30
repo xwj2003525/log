@@ -16,7 +16,6 @@ struct stream {
   stream &operator<<(char);
   stream &operator<<(const char *);
   stream &operator<<(const std::string &);
-  stream &operator<<(const Smallbuf &);
 
   void add(const char *, size_t len);
   const Smallbuf &buf() const;
