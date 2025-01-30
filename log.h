@@ -20,7 +20,7 @@ private:
   struct stream buf_;
 };
 
-static level getlevel();
+level getlevel();
 
 #define LOG(severity)                                                          \
   if (getlevel() <= level::severity)                                           \
