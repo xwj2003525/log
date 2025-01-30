@@ -30,11 +30,6 @@ stream &stream::operator<<(const std::string &s) {
   return *this;
 }
 
-stream &stream::operator<<(const Smallbuf &b) {
-  *this << b.str();
-  return *this;
-}
-
 void stream::add(const char *c, size_t l) { _buf.add(c, l); }
 const Smallbuf &stream::buf() const { return _buf; }
 void stream::reset() { _buf.reset(); }
