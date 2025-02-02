@@ -23,4 +23,5 @@ private:
 level getlevel();
 
 #define LOG(severity)                                                          \
+  if (getlevel() <= severity)                                                  \
   synclog(get_tid(), level::severity, __FILE__, __LINE__, __func__).stream()
